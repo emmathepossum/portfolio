@@ -7,6 +7,7 @@
     --text-light: #1e1e2e; 
     --text-link: #78c2ad;
     --underline: #375a7f;
+    --shadow: #375a7f;
     --header: 'Pacifico', cursive;
     --body: 'Josefin Sans', sans-serif; 
 }
@@ -17,7 +18,7 @@ html {
 }
 
 body {
-    max-width: 540px;
+    max-width: 640px;
     margin: 0 auto;
     text-align: justify;
 }
@@ -147,6 +148,7 @@ small, li {
 
 .card__img {
     border-radius: 16px;
+    box-shadow: 5px 5px 10px var(--shadow);
 }
 
 .card__title {
@@ -340,7 +342,7 @@ html.light {
 /* Media Query */
 @media only screen and (max-width: 600px) {
     h1 {
-        font-size: 2.4rem;
+        font-size: 2.3rem;
     }
 
     body {
