@@ -159,6 +159,7 @@ small {
 .card__img {
     border-radius: 16px;
     box-shadow: 5px 5px 10px var(--shadow);
+    object-fit: cover;
 }
 
 .snow__img {

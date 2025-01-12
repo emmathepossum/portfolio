@@ -13,19 +13,21 @@ const { frontmatter } = Astro.props;
     />
   </div>
   <h2>{frontmatter.title}</h2>
-  <slot />
   <ul class="badge__list">
     <li>
       <span class="badge badge--item">PLATFORM</span>{frontmatter.platform}
     </li>
     <li><span class="badge badge--item">STACK</span>{frontmatter.stack}</li>
-    <li>
-      <span class="badge badge--item">WEBSITE</span><a
-        class="badge__link"
-        href={frontmatter.website}
-        target="_blank">{frontmatter.website}</a
-      >
-    </li>
+    {
+      frontmatter.website && (
+        <li>
+          <span class="badge badge--item">WEBSITE</span>
+          <a class="badge__link" href={frontmatter.website} target="_blank">
+            {frontmatter.website}
+          </a>
+        </li>
+      )
+    }
     {
       frontmatter.github && (
         <li>
@@ -37,13 +39,20 @@ const { frontmatter } = Astro.props;
       )
     }
   </ul>
+
+  <slot />
+
   <div class="center">
-    <img
-      class="pro-img"
-      width="640"
-      height="310"
-      src={frontmatter.worksImage1.url}
-      alt={frontmatter.worksImage1.alt}
-    />
+    {
+      frontmatter.projecImage && (
+        <img
+          class="pro-img"
+          width="640"
+          height="310"
+          src={frontmatter.projecImage.url}
+          alt={frontmatter.projecImage.alt}
+        />
+      )
+    }
   </div>
 </BaseLayout>

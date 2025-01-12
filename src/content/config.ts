@@ -9,14 +9,17 @@ const projectsCollection = defineCollection({
         url: z.string(),
         alt: z.string()
       }),
-      worksImage1: z.object({
-        url: z.string(),
-        alt: z.string()
-      }),
+      projecImage: z.union([
+        z.object({
+          url: z.string(),
+          alt: z.string()
+        }),
+        z.undefined()
+      ]),
       platform: z.string(),
       stack: z.string(),
-      website: z.string(),
-      github: z.string(),
+      website: z.union([z.string(),z.undefined()]),
+      github: z.union([z.string(),z.undefined()]),
     })
 });
 
