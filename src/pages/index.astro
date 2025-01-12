@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Skills from "../components/Skills.astro";
 const pageTitle = "Emma The Possum";
 ---
 
@@ -13,8 +14,10 @@ const pageTitle = "Emma The Possum";
     />
   </div>
   <h1>EmmaThePossum</h1>
-  <span class="badge">Full Stack Developer</span>
-  <h2>About</h2>
+  <span class="badge">💻 Full Stack Developer</span>
+  <span class="badge">🐶 Dog Mom</span>
+  <span class="badge">🌱 Vegan</span>
+  <h2># whoami</h2>
   <p>
     Greetings Traveler! I'm a full-stack web developer with a passion for
     building seamless, efficient applications and a growing interest in DevOps.
@@ -36,151 +39,24 @@ const pageTitle = "Emma The Possum";
       <button class="btn">My portfolio</button>
     </a>
   </div>
-  <h2>Skills</h2>
+  <h2>&lt;/&gt; Skills</h2>
   <div class="skills center">
-    <img
-      class="skills__img"
-      width="46"
-      height="46"
-      alt="PHP"
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"
-    />
-
-    <img
-      class="skills__img"
-      width="46"
-      height="46"
-      alt="Laravel"
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg"
-    />
-
-    <img
-      class="skills__img"
-      width="46"
-      height="46"
-      alt="Symfony"
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/symfony/symfony-original.svg"
-    />
-
-    <img
-      class="skills__img"
-      width="46"
-      height="46"
-      alt="React"
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
-    />
-
-    <img
-      class="skills__img"
-      width="46"
-      height="46"
-      alt="Next.js"
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
-    />
-
-    <img
-      class="skills__img"
-      width="46"
-      height="46"
-      alt="JavaScript"
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
-    />
-    <img
-      class="skills__img"
-      width="46"
-      height="46"
-      alt="TypeScript"
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
-    />
-
-    <img
-      class="skills__img"
-      width="46"
-      height="46"
-      alt="Vue.js"
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg"
-    />
-
-    <img
-      class="skills__img"
-      width="46"
-      height="46"
-      alt="Svelte"
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg"
-    />
-
-    <img
-      class="skills__img"
-      width="46"
-      height="46"
-      alt="Astro"
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/astro/astro-original.svg"
-    />
-
-    <img
-      class="skills__img"
-      width="46"
-      height="46"
-      alt="Tailwind CSS"
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
-    />
-
-    <img
-      class="skills__img"
-      height="45"
-      height="46"
-      alt="Shopware"
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/shopware/shopware-original.svg"
-    />
-
-    <img
-      class="skills__img"
-      width="46"
-      height="46"
-      alt="Magento"
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/magento/magento-original.svg"
-    />
-
-    <img
-      class="skills__img"
-      width="46"
-      height="46"
-      alt="Docker"
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
-    />
-
-    <img
-      class="skills__img"
-      width="46"
-      height="46"
-      alt="VSCode"
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
-    />
-
-    <img
-      class="skills__img"
-      width="46"
-      height="46"
-      alt="Bootstrap"
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
-    />
-
-    <img
-      class="skills__img"
-      width="46"
-      height="46"
-      alt="Git"
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
-    />
+    <Skills />
   </div>
-  <h2>Interests</h2>
+  <h2>🐶 Interests 🎮</h2>
   <p>
     When I'm not coding, you can find me enjoying a few of my favorite things:
     tinkering with Linux, gaming (on linux ofc), and spending quality time with
-    my dog, Snow, who insists on being the real boss around here. Life’s better
+    my dog, Snow, who seemingly has an endless need for attention. Life’s better
     with a good mix of tech and tail wags!
   </p>
-  <div>
-    <img width="100%" class="card__img" alt="My Dog Snow" src="/snow.jpeg" />
+  <div class="center">
+    <img
+      width="100%"
+      class="card__img"
+      alt="Picture of my dog Snow"
+      title="Snow says: 'adopt don't shop!'"
+      src="/snow.jpeg"
+    />
   </div>
 </Layout>

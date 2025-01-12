@@ -4,7 +4,8 @@
     --background-light: #fdebf3;
     --button: #78c2ad;
     --text: #fdebf3;
-    --text-light: #1e1e2e; 
+    --text-light: #1e1e2e;
+    --text-gray: #a0a0a0;
     --text-link: #78c2ad;
     --underline: #375a7f;
     --shadow: #375a7f;
@@ -23,7 +24,7 @@ body {
     text-align: justify;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: var(--header);
     font-weight: normal;
 }
@@ -42,6 +43,10 @@ h2 {
     margin-bottom: 0;
 }
 
+h3 {
+    margin: 0;
+}
+
 p {
     font-family: var(--body);
     font-size: 1.1rem;
@@ -50,10 +55,15 @@ p {
     text-indent: 1rem;
 }
 
-small, li {
-    font-family: var(--body); 
+li {
+    font-family: var(--body);
 }
 
+small {
+    font-family: var(--body);
+    color: var(--text-gray);
+    font-size: 0.7rem;
+}
 /* Navigation Bar */
 .navbar {
     display: grid;
@@ -205,6 +215,10 @@ small, li {
     margin: 8px 4px;
 }
 
+.skills__block {
+    margin-bottom: 12px;
+}
+
 /* Items */
 .center {
     text-align: center;
@@ -217,7 +231,7 @@ small, li {
 
 /* Footer */
 footer {
-    margin: 4rem 0;
+    margin: 4rem 0 2rem 0;
 }
 
 .footer__link {

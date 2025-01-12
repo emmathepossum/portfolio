@@ -8,7 +8,7 @@ worksImage1:
     url: '/webtec.png'
     alt: 'first image of your project.'
 platform: Web
-stack: Next.js, JavaScript
+stack: Next.js, TypeScript
 website: https://webtec.solutions
 github: ''
 ---
