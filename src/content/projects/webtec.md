@@ -2,11 +2,11 @@
 title: 'Next.js'
 description: 'Frontend Developer'
 image:
-    url: '/webtec.png'
-    alt: 'Webtec Solutions Website'
+    url: '/webtec.webp'
+    alt: 'Webtec Solutions Website Screenshot'
 worksImage1:
-    url: '/webtec.png'
-    alt: 'first image of your project.'
+    url: '/webtec.webp'
+    alt: 'Webtec Solutions Website Screenshot'
 platform: Web
 stack: Next.js, TypeScript
 website: https://webtec.solutions

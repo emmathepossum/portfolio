@@ -161,6 +161,11 @@ small {
     box-shadow: 5px 5px 10px var(--shadow);
 }
 
+.snow__img {
+    width: 100%;
+    height: auto;
+}
+
 .card__title {
     margin: 0;
     font-family: var(--body);

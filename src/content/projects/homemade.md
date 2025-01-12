@@ -2,10 +2,10 @@
 title: 'Magento 2'
 description: 'Lead Developer'
 image:
-    url: '/homemade.png'
+    url: '/homemade.webp'
     alt: 'Homemade-by-Steffi Website Screenshot'
 worksImage1:
-    url: '/homemade.png'
+    url: '/homemade.webp'
     alt: 'Homemade-by-Steffi Website Screenshot'
 platform: Web
 stack: Magento 2, PHP, Zend, JavaScript
