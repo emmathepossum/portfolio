@@ -214,10 +214,11 @@ small {
     cursor: pointer;
 }
 
-/* Skills */
-.skills {
+.section__content {
     margin-top: 8px;
 }
+
+/* Skills */
 
 .skills__img {
     margin: 8px 4px;
