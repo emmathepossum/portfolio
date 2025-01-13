@@ -191,7 +191,7 @@ small {
 
 .link-card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
     padding: 0;
 }
@@ -402,4 +402,9 @@ html.light {
         height: auto;
         width: 350px;
     }
+
+    .link-card-grid {
+        grid-template-columns: auto;
+    }
+    
 }
