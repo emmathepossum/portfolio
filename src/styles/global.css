@@ -11,6 +11,8 @@
     --shadow: #375a7f;
     --header: 'Pacifico', cursive;
     --body: 'Josefin Sans', sans-serif; 
+    --icon-dark: #fdebf3;
+    --icon-light: #1e1e2e;
 }
 
 html {
@@ -269,17 +271,12 @@ footer {
     border-color: var(--text-link);
 }
 
-
-.git-icon {
-    content: url("/github-mark-white.svg");
+.footer .icon__link .icon__svg {
+    color: var(--icon-dark);
 }
 
-.mail-icon {
-    content: url("/mail-white.svg");
-}
-
-.linked-in {
-    content: url("/li-in-white.png");
+.footer .icon__link:hover .icon__svg {
+    color: var(--text-link);
 }
 
 /* 404 */
@@ -343,6 +340,11 @@ html.light {
     border-color: var(--text-link);
 }
 
+.light .footer .icon__link .icon__svg {
+    color: var(--icon-light);
+}
+
+
 .light .git-icon {
     content: url("/github-mark.svg");
 }
@@ -401,4 +403,3 @@ html.light {
         width: 350px;
     }
 }
-
