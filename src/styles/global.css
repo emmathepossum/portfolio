@@ -266,10 +266,14 @@ footer {
     width: 20px;
     border-radius: 50%;
     border: 2px solid #fdebf3;
+    transition: background-color 0.4s, color 0.4s;
 }
 
 .icon__link:hover {
     border-color: var(--text-link);
+    background-color: var(--button);
+    color: var(--text-light);
+    cursor: pointer;
 }
 
 .footer .icon__link .icon__svg {
@@ -277,7 +281,7 @@ footer {
 }
 
 .footer .icon__link:hover .icon__svg {
-    color: var(--text-link);
+    color: var(--text-light);
 }
 
 /* 404 */
@@ -342,9 +346,8 @@ html.light {
 }
 
 .light .footer .icon__link .icon__svg {
-    color: var(--icon-light);
+    color: var(--text-light);
 }
-
 
 .light .git-icon {
     content: url("/github-mark.svg");
